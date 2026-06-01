@@ -149,25 +149,20 @@ pm25-india/
 ├── data/
 │   ├── duckdb/
 │   ├── parquet/
-│   └── station_data/
+│   └── raw/
+|   └── final/
 │
 ├── data_pipeline/
-│
-├── feature_engineering/
 │
 ├── modeling/
 │
 ├── notebooks/
-│
-├── docs/
 │
 ├── results/
 │
 ├── README.md
 │
 ├── requirements.txt
-│
-└── VERSION_1.md
 ```
 
 ---
