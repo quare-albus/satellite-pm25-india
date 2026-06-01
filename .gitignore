@@ -1,0 +1,10 @@
+config/
+scripts/download_large_zip.py
+data/raw
+data/intermediate
+data/processed
+*.duckdb
+*.parquet 
+*.pkl
+.venv
+data/

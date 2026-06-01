@@ -1,0 +1,65 @@
+PROJECT: PM2.5 India Estimation
+
+DATE: 2026-06-01
+
+MODEL:
+XGBoost Regressor
+
+TARGET:
+PM2.5
+
+FEATURES:
+- AOD
+- t2m
+- sp
+- u10
+- v10
+- blh
+- wind_speed
+- pollution_trap
+- latitude
+- longitude
+- elevation
+- population_density
+- seasonal features
+
+EXCLUDED:
+- Station_Id
+- index
+- PM lag features
+- Rolling PM features
+
+DATASET:
+Total Records: 82171
+Stations: 399
+
+VALIDATION:
+Time-Series Split
+
+RESULTS:
+R² = 0.4580682161053439
+MSE = 1170.5206712499612
+RMSE = 34.21287288799292
+MAE = 21.944417553302173
+
+TOP FEATURES:
+1. Latitude
+2. Population Density
+3. Longitude
+4. Elevation
+5. t2m
+
+OBSERVATIONS:
+- Removing index improved R² by ~0.03
+- Removing latitude/longitude reduced R² from 0.45 to 0.36
+- Population density improved R² by ~0.02
+- AOD contributed but was less important than spatial features
+
+LIMITATIONS:
+- No nighttime lights
+- No land cover
+- No fire counts
+- No emissions inventory
+
+VERSION:
+V1.0
